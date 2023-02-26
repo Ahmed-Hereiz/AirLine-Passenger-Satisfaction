@@ -1,0 +1,36 @@
+pipeline 1
+----------
+
+- Drop ID, Gender, Arrival Delay
+- log transform deprature delay, Flight distance
+- one hot encode categorical data
+- std scale numerical data
+
+
+pipeline 2
+----------
+
+- Drop ID, Gender, Arrival Delay, departure delay
+- log transform Flight distance
+- ordinal encodde categorical data
+- std scale numerical data
+
+
+pipeline 3
+----------
+
+- Drop ID, Gender, Arrival Delay
+- log transform Flight distance
+- leave departure delay as it is
+- ordinal encodde categorical data
+- minmax scale continous data
+
+
+pipeline 4
+----------
+
+- Drop ID, Gender, Arrival Delay
+- log transform Flight distance, departure delay
+- one hot encodde categorical data
+- minmax scale discrete data
+- std scale continous data
